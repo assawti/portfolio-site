@@ -43,6 +43,14 @@
       color: #9ee0d0;
     }
 
+    /* Hero tagline */
+    .hero {
+      margin-top: 15px;
+      font-size: 1.1em;
+      color: #00ffcc;
+      font-style: italic;
+    }
+
     .container {
       max-width: 900px;
       margin: 40px auto;
@@ -129,6 +137,23 @@
       margin-bottom: 20px;
     }
 
+    /* Glowing Work With Me Button */
+    .work-button {
+      display: inline-block;
+      background: #00ffcc;
+      padding: 12px 24px;
+      border-radius: 6px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 8px #00ffccaa, 0 0 20px #00ffcc88, 0 0 40px #00ffcc66;
+      transition: all 0.3s ease;
+    }
+    .work-button:hover {
+      box-shadow: 0 0 12px #00ffccdd, 0 0 28px #00ffccbb, 0 0 60px #00ffccaa;
+      transform: translateY(-3px);
+    }
+
     @media (max-width: 768px) {
       .header h1 {
         font-size: 2.2em;
@@ -176,11 +201,13 @@
   <div class="header">
     <h1>Adelu Sheriff Olamide</h1>
     <p>Cloud & DevOps | Penetration Testing | Automation</p>
+    <div class="hero">Helping businesses build fast, secure, and reliable cloud systems that scale effortlessly</div>
   </div>
 
   <div class="container">
     <h2>About Me</h2>
-    <p>I’m a tech enthusiast with a passion for building scalable systems and uncovering security gaps. From automating CI/CD pipelines to identifying zero-day exploits in bug bounty programs, I bring a unique mix of DevOps and hacker mindset to the table.</p>
+    <p>I build and protect systems that businesses can depend on and I take that responsibility personally. From automating complex deployments to hunting down hidden security flaws, my work blends precision engineering with a sharp security mindset. I enjoy solving the problems others avoid, turning unreliable systems into resilient ones, and helping teams sleep better knowing their infrastructure is in safe hands.</p>
+    <p>Whether it is scaling a cloud platform, fine tuning Kubernetes, or securing a production pipeline, I approach every project as if it were my own business because lasting results come from ownership, not just code.</p>
 
     <h2>Skills</h2>
     <ul>
@@ -196,22 +223,19 @@
     <br>
     <h2 class="certifications">Certifications</h2>
     <ul>
-      <li>AWS Cloud Practitioner</li>
-      <li>Cisco Ethical Hacker</li>
-      <li>DevOps with AWS</li>
-      <li>Advent of Cyber 2024</li>
+      <li><a href="https://www.credly.com/badges/7e6937ca-8281-4429-99b5-a4b634ff26bc/linked_in_profile" target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner</a></li>
+      <li><a href="https://www.credly.com/badges/9e53c91d-3d59-4615-8244-e901efd7538c/" target="_blank" rel="noopener noreferrer">Cisco Ethical Hacker</a></li>
+      <li><a href="https://credential.certifyme.online/verify/efdeab5c25759" target="_blank" rel="noopener noreferrer">DevOps with AWS</a></li>
+      <li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-13JQPI3YGJ.pdf" target="_blank" rel="noopener noreferrer">Advent of Cyber 2024</a></li>
     </ul>
 
     <br>
     <h2>Projects</h2>
     <ul>
-      <!-- Hyperlinked projects first -->
-      <li><strong><a href="https://medium.com/@adelusheriff/from-code-to-cloud-deploying-a-java-e-commerce-app-on-kubernetes-3e7e2b1ee114" target="_blank">From Code to Cloud: Deploying a Java E‑Commerce App on Kubernetes</a></strong></li>
-      <li><strong><a href="https://medium.com/@adelusheriff/mastering-devops-building-secure-pipelines-with-a-hackers-mindset-cadad02f7d5f" target="_blank">Mastering DevOps: Building Secure Pipelines with a Hacker’s Mindset</a></strong></li>
-      <li><strong><a href="https://medium.com/@adelusheriff/ci-cd-and-build-security-a-lab-6c8840ccd783" target="_blank">CI/CD and Build Security — A lab</a></strong></li>
-      <li><strong><a href="https://medium.com/@adelusheriff/kubernetes-powering-the-future-of-secure-scalable-tech-9f5f8f25c721" target="_blank">Kubernetes: Powering the Future of Secure, Scalable Tech</a></strong></li>
-
-      <!-- Original non-linked projects after -->
+      <li><strong><a href="https://medium.com/@adelusheriff/from-code-to-cloud-deploying-a-java-e-commerce-app-on-kubernetes-3e7e2b1ee114" target="_blank" rel="noopener noreferrer">From Code to Cloud: Deploying a Java E‑Commerce App on Kubernetes</a></strong></li>
+      <li><strong><a href="https://medium.com/@adelusheriff/mastering-devops-building-secure-pipelines-with-a-hackers-mindset-cadad02f7d5f" target="_blank" rel="noopener noreferrer">Mastering DevOps: Building Secure Pipelines with a Hacker’s Mindset</a></strong></li>
+      <li><strong><a href="https://medium.com/@adelusheriff/ci-cd-and-build-security-a-lab-6c8840ccd783" target="_blank" rel="noopener noreferrer">CI/CD and Build Security — A lab</a></strong></li>
+      <li><strong><a href="https://medium.com/@adelusheriff/kubernetes-powering-the-future-of-secure-scalable-tech-9f5f8f25c721" target="_blank" rel="noopener noreferrer">Kubernetes: Powering the Future of Secure, Scalable Tech</a></strong></li>
       <li><strong>Angular Static Website + Apache + MariaDB:</strong> Deployed a full-stack app with build versioning and rollback for resilient releases.</li>
       <li><strong>Bug Bounty – SSRF Vulnerability:</strong> Identified and responsibly disclosed SSRF flaw in a production system, improving backend security.</li>
       <li><strong>Bug Bounty – Host Header Injection:</strong> Reported host header vulnerability in a SaaS product, preventing redirect-based attacks.</li>
@@ -219,10 +243,18 @@
 
     <br>
     <h2>Contact</h2>
+
+    <!-- Work With Me Button -->
+    <p>
+      <a href="mailto:adelusheriff@gmail.com" class="work-button">
+        Let's Work Together
+      </a>
+    </p>
+
     <p>Email: <a href="mailto:adelusheriff@gmail.com">adelusheriff@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sheriff-adelu-0303831b8/" target="_blank">linkedin.com/in/sheriff-adelu</a></p>
-    <p>GitHub: <a href="https://github.com/assawti" target="_blank">github.com/assawti</a></p>
-    <p>Medium: <a href="https://medium.com/@adelusheriff" target="_blank">medium.com/@adelusheriff</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sheriff-adelu-0303831b8/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sheriff-adelu</a></p>
+    <p>GitHub: <a href="https://github.com/assawti" target="_blank" rel="noopener noreferrer">github.com/assawti</a></p>
+    <p>Medium: <a href="https://medium.com/@adelusheriff" target="_blank" rel="noopener noreferrer">medium.com/@adelusheriff</a></p>
   </div>
 
   <div class="footer">
